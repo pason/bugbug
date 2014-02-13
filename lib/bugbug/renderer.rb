@@ -13,8 +13,12 @@ module Bugbug
 
 			payload.each do |p|
 				output += "<li class='bugug-row'> 
-											<span class='bugbug-query'> #{p[:sql]} </span> 
-											<span class='bugug-binds'> Binds: #{p[:binds] } </span>
+											<table>
+												<tr>
+													<td><div class='bugbug-query'> #{p[:sql]} </div> </td>
+													<td><div class='bugug-binds'> Binds: #{p[:binds] } </div></td>
+									 			<tr>
+									 		</table>
 									 </li>"
 				
 				p[:name]
