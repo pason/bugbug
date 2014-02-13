@@ -19,11 +19,11 @@ Or install it yourself as:
 
 ## Usage
 
-1. create initializer bugbug.rb with code:
+1. Create initializer bugbug.rb with code:
     Bugbug.track {}
 	
 	
-2. add to layout file:
+2. Add to layout file:
     <%= Bugbug.render %>
 
 ## Contributing
