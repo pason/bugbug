@@ -3,6 +3,8 @@
 Rails webdebug toolbar
 By default, web debug toolbar contains a variety of tools that assist with debugging, performance enhancement and more.
 
+ver: 0.1 Display all sql queries in request
+
 ## Installation
 
 Add this line to your application's Gemfile:
