@@ -7,7 +7,7 @@ By default, web debug toolbar contains a variety of tools that assist with debug
 
 Add this line to your application's Gemfile:
 
-    gem 'railsbug'
+    gem 'bugbug', git: 'git://github.com/pason/bugbug.git'
 
 And then execute:
 
@@ -15,11 +15,16 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install railsbug
+    $ gem install bugbug
 
 ## Usage
 
-TODO: Write usage instructions here
+1. create initializer bugbug.rb with code:
+    Bugbug.track do
+	end
+	
+2. add to layout file:
+    <%= Bugbug.render %>
 
 ## Contributing
 
