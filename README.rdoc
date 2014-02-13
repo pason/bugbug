@@ -21,8 +21,8 @@ Or install it yourself as:
 
 1. Create initializer bugbug.rb with code:
     Bugbug.track {}
-	
-	
+    
+    
 2. Add to layout file:
     <%= Bugbug.render %>
 
