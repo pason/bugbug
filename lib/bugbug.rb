@@ -1,3 +1,4 @@
+require "bugbug/version"
 require "bugbug/renderer"
 require "bugbug/store"
 require "action_controller/base/bugbug"
