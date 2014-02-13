@@ -3,11 +3,13 @@
 Rails webdebug toolbar
 By default, web debug toolbar contains a variety of tools that assist with debugging, performance enhancement and more.
 
+ver: 0.1 Display all sql queries in request
+
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'railsbug'
+    gem 'bugbug', git: 'git://github.com/pason/bugbug.git'
 
 And then execute:
 
@@ -15,11 +17,16 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install railsbug
+    $ gem install bugbug
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Create initializer bugbug.rb with code:
+    Bugbug.track {}
+    
+    
+2. Add to layout file:
+    <%= Bugbug.render %>
 
 ## Contributing
 
