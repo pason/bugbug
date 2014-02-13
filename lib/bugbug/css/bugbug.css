@@ -1,0 +1,81 @@
+.bugug {
+		font-family:verdana;
+		font-size: 11px;
+		position:fixed;
+		bottom:0px;
+		left:0px;
+		right:0px;
+		border-top: 1px solid #BBBBBB;
+		background-color: #F7F7F7;
+		color: #2F2F2F;
+		z-index: 6000000;
+}
+
+.bugbug-bar {
+	font-size: 12px;
+	background-color: #F7F7F7;
+	background-image: -moz-linear-gradient(center top , #E4E4E4, #FFFFFF);
+	height: 20px;
+	padding: 10px;
+}
+
+.bugbug-bar a {
+	color: #302E32;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.bugbug-rubyver {
+	background-color: #666666;
+	border-radius: 5px;
+	padding: 5px;
+	color: #ffffff;
+}
+
+.bugbug-queries {
+	background-color: #0F6AB4;
+	border-radius: 5px;
+	padding: 5px;
+	color: #ffffff;
+}
+
+.bugbug-ver {
+	background-color: #10A54A;
+	border-radius: 5px;
+	padding: 5px;
+	color: #ffffff;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	display: inline-block;
+}
+
+.bugug-content {
+	border-top: 1px solid #BBBBBB;
+	display:none;
+	overflow: auto;
+	height: 250px;
+}
+
+.bugug-list {
+	list-style-type: none;
+}
+
+.bugbug-query {
+	background-color: #666666;
+	border-radius: 5px;
+	padding: 5px;
+	color: #ffffff;
+}
+
+.bugug-binds {
+	background-color:#759E1C;
+	border-radius: 5px;
+	padding: 5px;
+	margin-left:10px;
+}
+
+.bugug-row {
+	padding: 5px;
+	margin-bottom: 5px;
+}
