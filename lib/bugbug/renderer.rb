@@ -8,7 +8,7 @@ module Bugbug
 						  	<a href='javascript:void(0)' onclick='bugugToogle()' id='bugug-open'> &#43; </a>
 						  	<span class='bugbug-rubyver'>Ruby #{RUBY_VERSION}-p#{RUBY_PATCHLEVEL}</span>
 								<span class='bugbug-queries'>Total queries: #{Store.instance.get_queries_count} </span>
-								<div class='bugbug-ver'>Bugbug #{VERSION} </div>
+								<div class='bugbug-ver'>Bugbug #{Bugbug::VERSION} </div>
 							</div>"
 
 			payload.each do |p|
