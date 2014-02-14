@@ -1,0 +1,23 @@
+<div class="bugug">
+	<div class='bugbug-bar'> 
+		<a href='javascript:void(0)' id='bugug-open'> &#43; </a>
+		<span class='bugbug-rubyver'>Ruby <%=RUBY_VERSION%>-p<%=RUBY_PATCHLEVEL%></span>
+		<span class='bugbug-queries'>Total queries: <%=Bugbug::Store.instance.get_queries_count%> </span>
+		<div class='bugbug-ver'>Bugbug <%=Bugbug::VERSION%> </div>
+	</div>
+
+	<div class="bugug-content"> 
+		<ul class='bugug-list'>
+		<% payload.each do |p| %>
+				<li class='bugug-row'> 
+						<table>
+							<tr>
+								<td><div class='bugbug-query'> <%= p[:sql] %> </div> </td>
+								<td><div class='bugug-binds'> Binds: <%= p[:binds]  %> </div></td>
+				 			</tr>
+				 		</table>
+				 </li>
+		<% end %>
+		</ul>
+	</div>
+</div>

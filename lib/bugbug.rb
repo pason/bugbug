@@ -1,3 +1,4 @@
+require "erubis"
 require "bugbug/version"
 require "bugbug/renderer"
 require "bugbug/store"
