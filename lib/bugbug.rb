@@ -12,12 +12,15 @@ module Bugbug
 			ActiveSupport::Notifications.subscribe("sql.active_record") do |name, start, finish, id, details|
 				Store.instance.push_query(details)
 			end
+			ActiveSupport::Notifications.subscribe("process_action.action_controller") do |name, start, finish, id, details|
+				Store.instance.push_request(details)
+			end
 		end
 	end
 
 	def self.render
 		if Rails.env.development?
-			Store.instance.get_sql_queries.html_safe
+			Store.instance.get_html.html_safe
 		end
 	end
 

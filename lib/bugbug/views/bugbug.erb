@@ -8,16 +8,17 @@
 
 	<div class="bugug-content"> 
 		<ul class='bugug-list'>
-		<% payload.each do |p| %>
+		<% queries.each do |q| %>
 				<li class='bugug-row'> 
 						<table>
 							<tr>
-								<td><div class='bugbug-query'> <%= p[:sql] %> </div> </td>
-								<td><div class='bugug-binds'> Binds: <%= p[:binds]  %> </div></td>
+								<td><div class='bugbug-query'> <%= q[:sql] %> </div> </td>
+								<td><div class='bugug-binds'> Binds: <%= q[:binds]  %> </div></td>
 				 			</tr>
 				 		</table>
 				 </li>
 		<% end %>
 		</ul>
+
 	</div>
 </div>

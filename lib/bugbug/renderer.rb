@@ -2,8 +2,8 @@ module Bugbug
 	module Renderer
 		
 		## Display html,css,js output
-		def output(payload)
-			output = css + js + Erubis::Eruby.new(File.read(File.dirname(__FILE__) + '/views/bugbug.erb')).result({payload: payload})
+		def output(queries, requests)
+			output = css + js + Erubis::Eruby.new(File.read(File.dirname(__FILE__) + '/views/bugbug.erb')).result({queries: queries, requests: requests})
 		end
 
 		#fetch css file
